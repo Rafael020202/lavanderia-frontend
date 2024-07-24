@@ -1,0 +1,77 @@
+main {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+
+  #background {
+    background-image: url('/assets/maquina-de-lavar-em-uma-lavanderia-minimalista.jpg');
+    background-size: cover;
+    background-position: center;
+
+    width: 80%;
+    height: 100%;
+  }
+
+  #login_area {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #form_title {
+      margin-bottom: 10px;
+    }
+
+    form {
+      color: rgb(71, 71, 71);
+
+      label {
+        margin-bottom: 5px;
+        font-size: 0.85rem;
+      }
+
+      section {
+        margin-bottom: 15px;
+      }
+
+      width: 100%;
+      max-width: 450px;
+
+      padding: 15px;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      #login_actions {
+        font-size: .85rem;
+        font-weight: bold;
+
+        margin-top: 15px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        span {
+          cursor: pointer;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+        }
+
+        span + span {
+          font-size: 1.2rem;
+        }
+      }
+
+      .p-button {
+        font-weight: bolder !important;
+      }
+    }
+  }
+}
